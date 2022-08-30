@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:29013
+    template:
+      default-topic: download_scheduler_topic_for_tests
+    consumer:
+      group-id: default_group_id_for_this_topic
