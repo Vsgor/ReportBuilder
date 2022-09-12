@@ -1,13 +1,13 @@
-package com.example.download_scheduler;
+package com.example.reportbuilder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DownloadSchedulerApplication {
+public class ReportBuilderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DownloadSchedulerApplication.class, args);
+        SpringApplication.run(ReportBuilderApplication.class, args);
     }
 
 }

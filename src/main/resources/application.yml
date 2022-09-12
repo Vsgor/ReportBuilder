@@ -1,7 +1,18 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eastbranchmanagement
+    username: report_builder
+    password: build_reporter
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      schema: report
+  liquibase:
+    default-schema: report
+    change-log: classpath:db/changelog/db.master-changelog.xml
+
   kafka:
     bootstrap-servers: localhost:29013
     template:
-      default-topic: download_scheduler_topic_for_tests
+      default-topic: topic-transaction-report
     consumer:
-      group-id: default_group_id_for_this_topic
+      group-id: group-id-transaction-report

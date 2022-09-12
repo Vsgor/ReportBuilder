@@ -1,10 +1,10 @@
-package com.example.download_scheduler;
+package com.example.reportbuilder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DownloadSchedulerApplicationTests {
+class ReportBuilderApplicationTests {
 
     @Test
     void contextLoads() {

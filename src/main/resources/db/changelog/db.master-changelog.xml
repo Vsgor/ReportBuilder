@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet id="1" author="vgorbuntsov">
+        <createTable tableName="transaction_report">
+            <column name="id" autoIncrement="true" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="withdraw_username" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deposit_username" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="withdraw_state" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transfer_sum" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
