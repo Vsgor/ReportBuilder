@@ -1,0 +1,7 @@
+{
+  "_class": "com.example.reportbuilder.entity.TransactionReport",
+  "withdrawUsername": "Devil",
+  "depositUsername": "MayCry",
+  "withdrawState": 500,
+  "transferSum": 1500
+}
